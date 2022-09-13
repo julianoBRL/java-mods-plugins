@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+	<parent>
+        <artifactId>pl4j-parent-plugin</artifactId>
+        <groupId>io.github.julianobrl</groupId>
+		<version>1.0.0</version>
+	</parent>
+  
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>pl4j-demo-plugin</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+        <plugin.id>${project.artifactId}</plugin.id>
+        <plugin.class>io.github.julianobrl.pl4jplugin.Application</plugin.class>
+        <plugin.version>${project.version}</plugin.version>
+        <plugin.provider>Shintaro</plugin.provider>
+        <plugin.dependencies />
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.julianobrl</groupId>
+            <artifactId>pl4j-core-app</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.24</version>
+		    <scope>provided</scope>
+		</dependency>
+    </dependencies>
+  
+</project>
